@@ -82,14 +82,28 @@ export default class Members extends Vue {
 <style scoped lang="scss">
 ul {
   list-style: none;
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
   li {
-    display: inline-flex;
+    margin: 2rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 2px 0 lightblue;
+    background: #49B9F9;
 
-  }
+    img {
+      border-radius: 10px 10px 0 0;
+    }
 
-  p {
-    display: inline-flex;
+    p {
+      font-weight: bold;
+      color: white;
+    }
+
   }
 </style>
